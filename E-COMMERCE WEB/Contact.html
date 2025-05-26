@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--Font Awsome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--My css-->
+    <link rel="stylesheet" href="Style.css">
+
+
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <h1>One Piece
+        </h1>
+        <div class="navbar-links">
+            <p class="side-navbar-links"> <a href="Home.html">Home</a> </p>
+            <p class="side-navbar-links"> <a href="Collection.html">Collection</a> </p>
+            <p class="side-navbar-links"> <a href="Contact.html">Contact</a> </p>
+        </div>
+        <div class="navbar-menu" onclick="showsidenav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>
+    <!--side Navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick=" closesidenav()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+
+        <div class="side-navbar-link">
+            <p class="side-navbar-links"> <a href="Home.html">Home</a> </p>
+            <p class="side-navbar-links"> <a href="Collection.html">Collection</a> </p>
+            <p class="side-navbar-links"> <a href="Contact.html">Contact</a> </p>
+        </div>
+
+
+    </div>
+
+
+    <!--Contact-->
+
+
+
+    <div class="contact-container">
+
+
+        <div class="contact-box">
+            <form>
+                <div>
+                    <h2>Contact US</h2>
+                </div>
+
+                <div>
+                    <p>Name:</p>
+                    <input>
+                </div>
+
+                <div>
+                    <p>Email:</p>
+                    <input>
+                </div>
+
+                <div>
+                    <p>Message:</p>
+                    <textarea class="Message"></textarea>
+
+                </div>
+                <div><button id="submit">Submit</button></div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--Footer-->
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2>One Piece</h2>
+                <div class="lowertexts">
+                    <p> Discover your style with "One Piece". We offer acurated selection of trendy and timeless fashion
+                        pieces for every occasion.</p>
+                    <div class="footer-icon-container">
+                        <a href="https://www.linkedin.com/in/sree-vishnu-n"> <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100076563870654&mibextid=ZbWKwL"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="mailto:sreevishnu.n28@gmail.com"> <i class="fa-solid fa-square-envelope"></i></a>
+                    </div>
+                    <p>@2024 One Piece.com</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="Script.js"></script>
+
+
+</body>
+
+</html>

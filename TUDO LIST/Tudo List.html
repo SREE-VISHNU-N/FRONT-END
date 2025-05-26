@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo List</title>
+    <link rel="stylesheet" href="Tudo List Style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+
+            <div class="topbox">
+
+                <h1 style="text-align: center;">Tudo List</h1>
+
+                <input placeholder="Ex: Sree vishnu " class="input" id="input" type="text"><button id="addli"
+                    onclick="add()">ADD</button>
+
+            </div>
+
+            <div class="scrollbox">
+
+                <ol id="list">
+
+                </ol>
+
+            </div>
+
+        </div>
+
+        <script>
+
+            let id = 'data';
+            let increment = 0;
+            let input = document.getElementById("input")
+            let addli = document.getElementById("list")
+
+            function add() {
+                let list = document.createElement("li");
+                increment++;
+                list.innerHTML = `<span id=${id + increment}>${input.value}</span>` + `<button class="del" onclick="del(event)">×</button>  <button class="copy" onclick="copy('${id + increment}')">Copy</button>`
+                addli.append(list)
+            }
+
+            function del(event) {
+                event.target.parentElement.remove()
+            }
+
+            function copy(id) {
+                let copytext = document.getElementById(id).innerHTML;
+                // console.log(document.getElementById(id).innerHTML)
+                navigator.clipboard.writeText(copytext)
+                alert("Text copied: " + copytext)
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>

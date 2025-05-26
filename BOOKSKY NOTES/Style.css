@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3NC1kPje7P3b05O2AHipsHjve_UvtQOGrXw&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.navbar {
+    background-color: #f83b73;
+    padding: 10px;
+    text-align: center;
+
+
+
+}
+
+.container {
+    padding: 15px;
+}
+
+.book-container {
+    background-color: rgba(0, 0, 0, 0.61);
+    color: white;
+    border-radius: 10px;
+    width: 25%;
+    padding: 15px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.book-container h2 {
+    color: #f83b73;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.book-container h5 {
+
+    margin-bottom: 5px;
+}
+
+.book-container button {
+    background-color: #f83b73;
+    color: black;
+    border-radius: 10px;
+    padding: 3px;
+    border: 0px;
+}
+
+.button {
+    background-color: #f83b73;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 0px;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+
+}
+
+.blacklayer {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    display: none;
+
+
+}
+
+.popup-box {
+    background-color: #f83b73;
+    width: 35%;
+    padding: 30px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    border-radius: 15px;
+    display: none;
+
+}
+
+.popup-box input {
+    background: transparent;
+    border: none;
+    width: 100%;
+    border-bottom: solid black 2px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    outline: none;
+
+
+}
+
+.popup-box textarea {
+    background: transparent;
+    width: 100%;
+    border: solid black 1px;
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+    border-radius: 2px;
+
+
+}
+
+.popup-box input::placeholder {
+    color: black;
+}
+
+.popup-box textarea::placeholder {
+    color: black;
+    font-size: 15px;
+}
+
+.popup-box button {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 2px;
+
+}
+
+#add-book {
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
+#cancel-popup {
+    background-color: rgba(0, 0, 0, 0.842);
+}

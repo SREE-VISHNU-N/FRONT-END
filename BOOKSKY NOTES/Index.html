@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+
+    <div class="navbar">
+        <h1>Welcome</h1>
+        <h2>Note Your Favorite Book</h2>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2 style="text-align: center;">The Mysterious Island</h2>
+            <h4>Jules Verne</h4>
+            <p>Five prisoners of war steal a hot air balloon and escape capture in Virginia during the American Civil
+                War. They fly for several thousand miles before a storm forces them to crash land on an unknown island
+                in the Pacific.</p>
+            <button onclick="deletebook(event)">Delete</button>
+
+        </div>
+
+    </div>
+    <div class="blacklayer"></div>
+    <div class="popup-box">
+
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Bood Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+
+
+    <button class="button" id="popupbutton">+</button>
+
+    <script src="Script.js"></script>
+
+
+
+
+
+</body>
+
+</html>

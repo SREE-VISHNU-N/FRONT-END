@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: rgb(20, 201, 201);
+    border: solid white 3px;
+}
+
+
+
+.title {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border: solid black 2px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border: solid gray 2px;
+}
+
+.container div {
+    border: solid black 2px;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    text-align: center;
+    width: 125px;
+    flex-basis: 23%;
+   
+
+
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+    
+}
+
+hr {
+    margin: 2px;
+}
+.contact{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+h4{
+    color: black;
+}

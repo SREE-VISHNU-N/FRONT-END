@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="simple calculator css.css">
+</head>
+
+<body style="text-align: center;">
+
+    <div class="total">
+
+        <div class="box">
+
+
+
+
+
+
+            <nav class="navbar">
+                <h1>SIMPLE CALCULATOR</h1>
+            </nav>
+            <div class="content">
+                <input class="in1" id="in1" type="number" placeholder="Enter First Number"><br>
+                <input class="in2" id="in2" type="number" placeholder="Enter Second Number"><br>
+                <button class="add" onclick="add()">+</button>
+                <button class="sub" onclick="sub()">-</button><br>
+                <button class="mul" onclick="mul()">×</button>
+                <button class="div" onclick="div()">÷</button>
+                <h3 id="result" style="color: white;">Answer = </h3>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+
+
+        function add() {
+            var in1 = document.getElementById("in1")
+            var in2 = document.getElementById("in2")
+            var results = document.getElementById("result")
+
+
+
+            var a = Number(in1.value)
+            var b = Number(in2.value)
+            var total = a + b
+
+            results.textContent = "Answer = " + total
+
+
+
+        }
+        function sub() {
+            var in1 = document.getElementById("in1")
+            var in2 = document.getElementById("in2")
+            var results = document.getElementById("result")
+
+
+
+            var a = Number(in1.value)
+            var b = Number(in2.value)
+            var total = a - b
+
+            results.textContent = "Answer is : " + total
+
+
+
+        }
+        function mul() {
+            var in1 = document.getElementById("in1")
+            var in2 = document.getElementById("in2")
+            var results = document.getElementById("result")
+
+
+
+            var a = Number(in1.value)
+            var b = Number(in2.value)
+            var total = a * b
+
+            results.textContent = "Answer is : " + total
+
+
+
+
+        }
+        function div() {
+            var in1 = document.getElementById("in1")
+            var in2 = document.getElementById("in2")
+            var results = document.getElementById("result")
+
+
+
+            var a = Number(in1.value)
+            var b = Number(in2.value)
+            var total = a / b
+
+            results.textContent = "Answer is : " + total
+
+
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

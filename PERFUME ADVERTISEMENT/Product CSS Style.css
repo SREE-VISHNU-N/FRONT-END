@@ -1,0 +1,74 @@
+nav {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+li {
+    display: inline;
+    color: grey;
+    cursor: pointer;
+}
+
+h1,ul {
+    display: inline;
+}
+
+ul {
+   padding-left: 65%;
+}
+
+li:hover {
+    color: white;
+}
+
+input {
+    width: 60%;
+    padding: 10px;
+   
+}
+
+.searchbar {
+   padding: 40px;
+   text-align: center;
+}
+
+.box {
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+  
+
+
+}
+img {
+    width: 200px;
+    height: 250px;
+}
+
+.images {
+    text-align: center;
+}
+
+.box:hover {
+    background-color: black;
+    color: white;
+}
+
+.about {
+    text-align: center;
+    padding: 40px;
+}
+
+.conducts {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+
+} 
+
+
