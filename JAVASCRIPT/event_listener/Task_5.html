@@ -1,0 +1,30 @@
+<!--  Your Task 5: Prevent Form Submit
+HTML:
+<form id="loginForm">
+  <input type="text" placeholder="Username">
+  <input type="password" placeholder="Password">
+  <button type="submit">Login</button>
+</form>
+JS Task:
+When the form is submitted, block it from reloading and log:
+"Login form was submitted (but not really!)" to the console. -->
+
+<html>
+    <head>
+        <title>EventListener</title>
+    </head>
+    <body>
+        <form id="loginForm">
+  <input type="text" placeholder="Username">
+  <input type="password" placeholder="Password">
+  <button type="submit">Login</button>
+</form>
+    </body>
+    <script>
+        let submission=document.getElementById('loginForm');
+        submission.addEventListener('submit',(event)=>{
+            event.preventDefault();
+            console.log('Login form was submitted (but not really!)');
+        })
+    </script>
+</html>

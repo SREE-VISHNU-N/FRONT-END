@@ -1,0 +1,36 @@
+<!-- Task 3: Count Number of List Items
+HTML:
+
+<ul id="fruits">
+  <li>Apple</li>
+  <li>Mango</li>
+  <li>Banana</li>
+</ul>
+JS Task:
+Write JS to count how many <li> items are present inside the
+#fruits list and print it using console.log(). -->
+
+<html>
+
+<head>
+    <title>DOM</title>
+</head>
+
+<body>
+    <ul id="fruits">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+    </ul>
+</body>
+<script>
+    let list=document.getElementsByTagName('li');
+    console.log(list.length);//stright print
+    let count=0;
+    for(let i=0; i<list.length; i++){ // loop print
+        count += 1;
+    }
+    console.log(count);
+</script>
+
+</html>

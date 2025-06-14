@@ -1,0 +1,23 @@
+<!--  Task 1: Click to Show Alert
+HTML:
+<button id="alertBtn">Click Me</button>
+Task:
+When this button is clicked, show an alert with "Hello from JS!". -->
+
+<html>
+    <head>
+        <title>
+            EventListener
+        </title>
+    </head>
+    <body>
+       <button id="alertBtn">Click Me</button>
+    </body>
+    <script>
+        let btn=document.getElementById("alertBtn");
+        btn.addEventListener('click',(event)=>{
+            console.log('Button clicked');
+            alert('Hello from JS!');
+        })
+    </script>
+</html>

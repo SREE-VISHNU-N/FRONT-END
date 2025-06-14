@@ -1,0 +1,30 @@
+<!--  Task 4: Add a New Item to List
+HTML:
+<ul id="languages">
+  <li>HTML</li>
+  <li>CSS</li>
+</ul>
+JS Task:
+Use JS to create a new <li> with text "JavaScript" and append it to the list. -->
+
+
+<html>
+
+<head>
+    <title>DOM</title>
+</head>
+
+<body>
+    <ul id="languages">
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+</body>
+<script>
+    let element=document.getElementById("languages");
+    let newElement = document.createElement('li');
+    newElement.textContent="JavaScript";
+    element.append(newElement);
+</script>
+
+</html>

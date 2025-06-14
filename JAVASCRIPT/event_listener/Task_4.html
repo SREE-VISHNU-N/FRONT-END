@@ -1,0 +1,26 @@
+<!--  Your Task 4: Live Display Input
+HTML:
+<input type="text" id="countryInput" placeholder="Type a country">
+<p id="showCountry"></p>
+JS Task:
+When the user types, show the same country name in the paragraph live -->
+
+<html>
+
+<head>
+    <title>EventListener</title>
+</head>
+
+<body>
+    <input type="text" id="countryInput" placeholder="Type a country">
+    <p id="showCountry"></p>
+</body>
+<script>
+    let input=document.getElementById('countryInput');
+    let show=document.getElementById('showCountry');
+    input.addEventListener('input',(event)=>{
+        show.textContent=input.value;
+    })
+</script>
+
+</html>

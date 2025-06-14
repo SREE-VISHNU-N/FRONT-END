@@ -1,0 +1,29 @@
+<!--  Task 2: Change Text on Mouse Over
+HTML:
+<h1 id="hoverText">Hover over me</h1>
+Task:
+When the mouse hovers over the text, change it to "You hovered!" -->
+<html>
+    <head>
+        <title>
+            EventListener
+        </title>
+    </head>
+    <body>
+        <h1 id="hoverText">Hover over me</h1>
+    </body>
+    <script>
+        let element=document.getElementById('hoverText');
+        element.addEventListener('mouseover',(event)=>{
+
+            element.textContent='You hovered';
+
+        })
+       
+        element.addEventListener('mouseout',(event)=>{
+
+            element.textContent='Hover over me';
+
+        })
+    </script>
+</html>

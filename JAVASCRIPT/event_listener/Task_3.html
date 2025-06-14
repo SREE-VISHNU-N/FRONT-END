@@ -1,0 +1,30 @@
+<!--  Task 3: Count Button Clicks
+HTML:
+<button id="countBtn">Click</button>
+<p id="clickCount">Clicks: 0</p> -->
+
+<html>
+
+<head>
+    <title>
+        EventListener
+    </title>
+</head>
+
+<body>
+    <button id="countBtn">Click</button>
+    <p id="clickCount">Clicks:0</p>
+
+</body>
+<script>
+    let btn=document.getElementById('countBtn');
+    let count=document.getElementById('clickCount');
+
+    btn.addEventListener('click',(event)=>{
+        let current=parseInt(count.textContent.split(':')[1]);
+        count.textContent='Clicks:'+(current+1)
+    })
+
+</script>
+
+</html>
