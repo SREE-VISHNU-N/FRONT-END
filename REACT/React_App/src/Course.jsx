@@ -1,21 +1,24 @@
-import HTML from './assets/HTML.png'
+import PropTypes from 'prop-types'
+
 
 function Course(props) {
 
-    return (
-        <div className="card">
-            <img src={props.image} alt="" />
-            <h2>{props.name}</h2>
-            <p>{props.price}</p>
-        </div>
-    );
+   
+        return (
+            <div className="card">
+                <img src={props.image} alt="" />
+                <h2>{props.name}</h2>
+                <p>{props.price}</p>
+            </div>
+        );
 }
 
-Course.defaultProps = {
-    name  : 'React js',
-    price : '$599',
-    image : HTML
-
+Course.PropTypes = {
+    name: PropTypes.string,
+    price: PropTypes.number,
+    show: PropTypes.bool
 }
+
+
 
 export default Course
