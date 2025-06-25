@@ -1,39 +1,21 @@
 import Course from './Course'
-import html from './assets/HTML.png'
-import css from './assets/CSS.png'
-import js from './assets/JS.png'
-import react from './assets/REACT.png'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function courseList() {
-    const [Courses, setCourses] = useState([
-        {
-            id: 1,
-            name: 'HTML',
-            price: 199,
-            image: html
-        },
-        {
-            id: 2,
-            name: 'CSS',
-            price: 199,
-            image: css
-        },
-        {
-            id: 3,
-            name: 'Java Script',
-            price: 499,
-            image: js
-        },
-        {
-            id: 4,
-            name: 'REACT',
-            price: 999,
-            image: react
-        }
+    const [Courses, setCourses] = useState(null);
+    //npx json-server --watch data/dummyData.json --port 3000 --static ./data
 
 
-    ]);
+    useEffect(()=>{
+        fetch('https://jsonplaceholder.typicode.com/posts')
+        .then((response)=>{
+            console.log(response);
+            return response.json();
+        })
+        .then((data)=>{
+            console.log(data);
+        })
+    },[]);
 
     function handleDelete(id) {
         const newCourses = Courses.filter((course) => course.id != id);
