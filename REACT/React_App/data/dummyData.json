@@ -4,25 +4,25 @@
             "id": 1,
             "name": "HTML",
             "price": 199,
-            "image": "/assets/HTML.png"
+            "image": "http://localhost:3000/assets/html.png"
         },
         {
             "id": 2,
             "name": "CSS",
             "price": 199,
-            "image": "/assets/CSS.png"
+            "image": "http://localhost:3000/assets/css.png"
         },
         {
             "id": 3,
             "name": "Java Script",
             "price": 499,
-            "image": "/assets/JS.png"
+            "image": "http://localhost:3000/assets/js.png"
         },
         {
             "id": 4,
             "name": "REACT",
             "price": 999,
-            "image": "/assets/REACT.png"
+            "image": "http://localhost:3000/assets/react.png"
         }
     ]
 }

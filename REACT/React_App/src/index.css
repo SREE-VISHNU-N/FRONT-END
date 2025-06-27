@@ -22,5 +22,16 @@
   height: 150px;
   
 }
+.loding{
+position: absolute;
+top: 40%;
+right: 50%;
+}
 
+.error{
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 40%;
+}
 
