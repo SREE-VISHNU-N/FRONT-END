@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuDoList</title>
+</head>
+
+<body>
+    <div>
+        <h2>ToDo List</h2>
+        <input type="text" id="textInput">
+        <button id="addButton">Add</button>
+    </div>
+    <h3>Tasks</h3>
+    <ul id="Tasks">
+        <li>Hello World!</li>
+    </ul>
+
+    <h3>Completed Tasks</h3>
+    <ul id="donelist">
+
+    </ul>
+
+</body>
+<script>
+    let textInput = document.getElementById('textInput');
+    let addButton = document.getElementById('addButton');
+    let tasks = document.getElementById('Tasks');
+    let donelist= document.getElementById('donelist');
+
+    let list = new Array();//for storing purpose(optional but important)
+
+    addButton.addEventListener('click', (event) => {
+
+        if (textInput.value != "") {
+            list.push(textInput.value);//storing purpose 
+            tasks.innerHTML += '<li id="'+(list.length-1)+'"><button onclick="complete('+(list.length-1)+')">' + textInput.value + '</button></li>';
+            textInput.value = "";
+        }
+
+    })
+
+    function complete(id){
+        donelist.innerHTML += '<li>'+list[id]+'</li>';
+        document.getElementById(id).style.display = 'none';
+
+    }
+</script>
+
+</html>
