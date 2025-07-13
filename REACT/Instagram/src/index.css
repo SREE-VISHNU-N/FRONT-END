@@ -1,0 +1,34 @@
+.w-20{
+  width: 20%;
+}
+.w-30{
+  width: 30%;
+}
+.logo_text{
+  margin-top: 20px;
+  width: 90px;
+}
+.profile_picture{
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.bi{
+ margin-right: 10px;
+ position: relative;
+ top: 3;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+      gap: 12px;}
+
+.container div:hover{
+    background-color: #f2f2f2; /* subtle gray shade */
+    cursor: pointer;
+}
+.container div{
+  padding: 5px;
+  border-radius: 8px;
+}
