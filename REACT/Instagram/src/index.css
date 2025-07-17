@@ -1,34 +1,104 @@
-.w-20{
+.w-20 {
   width: 20%;
 }
-.w-30{
+
+.w-30 {
   width: 30%;
 }
-.logo_text{
+
+.logo_text {
   margin-top: 20px;
   width: 90px;
 }
-.profile_picture{
+
+.profile_picture {
   width: 25px;
   height: 25px;
   border-radius: 50px;
   margin-right: 10px;
 }
-.bi{
- margin-right: 10px;
- position: relative;
- top: 3;
-}
-.container {
-    display: flex;
-    flex-direction: column;
-      gap: 12px;}
 
-.container div:hover{
-    background-color: #f2f2f2; /* subtle gray shade */
-    cursor: pointer;
+.bi {
+  margin-right: 10px;
+  position: relative;
+  top: 3;
 }
-.container div{
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container div:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.container div {
   padding: 5px;
   border-radius: 8px;
+}
+
+.dp {
+  height: 36px;
+  border: white solid 2px;
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.dpBack {
+  margin-top: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+.user {
+  font-weight: bold;
+  font-size: small;
+  margin-left: 12px;
+  position: relative;
+  top: 8px;
+}
+
+.image {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 425px;
+  width: 425px;
+}
+
+.book {
+  margin-left: 330px;
+}
+
+.likes {
+  font-size: small;
+}
+
+.story {
+  height: 80px;
+  background-color: aquamarine;
+}
+
+.caption {
+  font-size: small;
+}
+
+.feedContainer {
+  margin-left: 90px;
+}
+
+.hr {
+  width: 426px;
+}
+
+.more {
+  position: relative;
+  right: 20px;
+  bottom: 240px;
+
 }

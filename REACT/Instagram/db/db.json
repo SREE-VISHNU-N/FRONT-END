@@ -1,0 +1,139 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "username": "johnnydepp",
+      "profilePic": "http://localhost:5000/assets/Jack.jpg",
+      "image": "http://localhost:5000/assets/Jack1.jpg",
+      "caption": "Finding peace by the sea 🌊🕶️",
+      "likes": 1012,
+      "comments": [
+        {
+          "username": "keanufan",
+          "text": "Captain Jack still got style!"
+        },
+        {
+          "username": "moviebuff",
+          "text": "Legend!"
+        },
+        {
+          "username": "vintagefan",
+          "text": "This feels like Pirates era 😍"
+        },
+        {
+          "username": "beachlover",
+          "text": "Vibes 🔥🔥"
+        }
+      ],
+      "timestamp": "2025-07-14T12:00:00Z"
+    },
+    {
+      "id": "2",
+      "username": "tomcruise",
+      "profilePic": "http://localhost:5000/assets/Tom.jpg",
+      "image": "http://localhost:5000/assets/Tom1.jpg",
+      "caption": "Did my own stunt again! 💥 #MissionPossible",
+      "likes": 2983,
+      "comments": [
+        {
+          "username": "stuntlover",
+          "text": "Respect 🙌🔥"
+        },
+        {
+          "username": "moviestar",
+          "text": "You never age 😂"
+        },
+        {
+          "username": "fanboy21",
+          "text": "Top Gun vibes bro!"
+        },
+        {
+          "username": "adrenalineaddict",
+          "text": "Insane shot!"
+        }
+      ],
+      "timestamp": "2025-07-13T18:45:00Z"
+    },
+    {
+      "id": "3",
+      "username": "therock",
+      "profilePic": "http://localhost:5000/assets/Rock.jpg",
+      "image": "http://localhost:5000/assets/Rock1.jpg",
+      "caption": "Early morning iron paradise grind 💪 #JustBringIt",
+      "likes": 5023,
+      "comments": [
+        {
+          "username": "fitfan",
+          "text": "Beast mode always 💯"
+        },
+        {
+          "username": "gymrat",
+          "text": "Let's gooo!"
+        },
+        {
+          "username": "liftheavy",
+          "text": "Inspiration 💪🔥"
+        },
+        {
+          "username": "proteinboss",
+          "text": "Time for deadlifts!"
+        }
+      ],
+      "timestamp": "2025-07-13T06:15:00Z"
+    },
+    {
+      "id": "4",
+      "username": "robertdowneyjr",
+      "profilePic": "http://localhost:5000/assets/Robert.jpg",
+      "image": "http://localhost:5000/assets/Robert1.jpg",
+      "caption": "Sometimes I pretend I’m still in the lab 🧪😎",
+      "likes": 4100,
+      "comments": [
+        {
+          "username": "ironmanfan",
+          "text": "We love you 3000 ❤️"
+        },
+        {
+          "username": "marvelfreak",
+          "text": "Tony Stark forever!"
+        },
+        {
+          "username": "sciencebro",
+          "text": "Where's Bruce? 😁"
+        },
+        {
+          "username": "techguru",
+          "text": "Build another suit plz!"
+        }
+      ],
+      "timestamp": "2025-07-12T20:30:00Z"
+    },
+    {
+      "id": "5",
+      "username": "keanureeves",
+      "profilePic": "http://localhost:5000/assets/Jhon.jpg",
+      "image": "http://localhost:5000/assets/Jhon1.jpg",
+      "caption": "Ride free. Stay humble. 🏍️ #KeanuVibes",
+      "likes": 3378,
+      "comments": [
+        {
+          "username": "johnwickfan",
+          "text": "He’s breathtaking!"
+        },
+        {
+          "username": "neo_matrix",
+          "text": "The One!"
+        },
+        {
+          "username": "humblelegend",
+          "text": "Nicest guy on Earth!"
+        },
+        {
+          "username": "bikelover",
+          "text": "Love your ride 🔥"
+        }
+      ],
+      "timestamp": "2025-07-11T16:00:00Z"
+    }
+  ]
+}
