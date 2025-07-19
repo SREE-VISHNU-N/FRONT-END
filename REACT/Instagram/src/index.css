@@ -24,10 +24,19 @@
   top: 3;
 }
 
+.container div {
+  width: 200px;
+
+}
+
 .container {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  position: fixed;
+  width: 222px;
+  border-right: rgb(209, 204, 204) solid 1px;
+
 }
 
 .container div:hover {
@@ -42,10 +51,12 @@
 
 .dp {
   height: 36px;
+  width: 36px;
   border: white solid 2px;
   position: relative;
   top: 2px;
   left: 2px;
+  cursor: pointer;
 }
 
 .dpBack {
@@ -57,11 +68,12 @@
 }
 
 .user {
-  font-weight: bold;
-  font-size: small;
+  font-weight: 500;
+  font-size: 12px;
   margin-left: 12px;
   position: relative;
   top: 8px;
+  cursor: pointer;
 }
 
 .image {
@@ -72,7 +84,7 @@
 }
 
 .book {
-  margin-left: 330px;
+  margin-left: 318px;
 }
 
 .likes {
@@ -88,9 +100,6 @@
   font-size: small;
 }
 
-.feedContainer {
-  margin-left: 90px;
-}
 
 .hr {
   width: 426px;
@@ -100,5 +109,101 @@
   position: relative;
   right: 20px;
   bottom: 240px;
+  cursor: pointer;
 
+}
+
+.feedContainer {
+  margin-left: 90px;
+}
+
+.suggesContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.follow,
+.switch {
+  color: #0095f6;
+  font-size: 12px;
+  position: relative;
+  top: 11px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.seeAll {
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.forYou {
+  font-size: 13px;
+  color: gray;
+  font-weight: 600;
+}
+
+.suggesDp {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.suggesUser {
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 12px;
+  position: relative;
+  bottom: 8px;
+  cursor: pointer;
+}
+
+.storyWrapper {
+  display: flex;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.storyUser {
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+  max-width: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+}
+
+.storyDp {
+  cursor: pointer;
+  height: 54px;
+  width: 54px;
+  border: white solid 2px;
+  position: relative;
+  left: 2px;
+  top: 2px;
+}
+
+.storyDpBack {
+  margin-top: 8px;
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+.storyContainer {
+  margin: 6px;
+}
+
+.tick {
+  margin-top: 1px;
+}
+
+.bi {
+  cursor: pointer;
 }

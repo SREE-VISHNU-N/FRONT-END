@@ -22,16 +22,16 @@ function Posts() {
 
               <div className='dpBack d-flex'>
                 <img className='dp rounded-circle' src={post.profilePic} alt="ProfilePic" />
-                <h5 className='user'>{post.username} </h5>
+                <h5 className=' user d-flex'>{post.username}<i className="tick bi bi-patch-check-fill text-primary ms-1"></i></h5>
               </div>
 
               <div>   <img className='image' src={post.image} alt="" /><i className="more bi bi-three-dots"></i></div>
 
               <div>
-                <i className="bi bi-heart"></i>
-                <i className="bi bi-chat"></i>
-                <i className="bi bi-send"></i>
-                <i className="book bi bi-bookmark"></i>
+                <i className="bi bi-heart fs-5"></i>
+                <i className="bi bi-chat fs-5"></i>
+                <i className="bi bi-send fs-5"></i>
+                <i className="book bi bi-bookmark fs-5"></i>
               </div>
 
               <div>

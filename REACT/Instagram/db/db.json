@@ -135,5 +135,41 @@
       ],
       "timestamp": "2025-07-11T16:00:00Z"
     }
+  ],
+
+  "profile":{
+    "id": "6",
+      "username": "john_cena",
+      "profilePic": "http://localhost:5000/assets/john_cena.jpg"
+  },
+  
+  "suggestions":[
+    {
+      "id": "7",
+      "username": "alexandra_daddario",
+      "profilePic": "http://localhost:5000/assets/alexandra_daddario.jpg"
+    },
+        {
+      "id": "8",
+      "username": "emma_watson",
+      "profilePic": "http://localhost:5000/assets/emma_watson.jpg"
+    },
+        {
+      "id": "9",
+      "username": "hayley_atwell",
+      "profilePic": "http://localhost:5000/assets/hayley_atwell.jpg"
+    },
+        {
+      "id": "10",
+      "username": "scarlett_johansson",
+      "profilePic": "http://localhost:5000/assets/scarlett_johansson.jpg"
+    },
+        {
+      "id": "11",
+      "username": "penelope_cruz",
+      "profilePic": "http://localhost:5000/assets/penelope_cruz.jpg"
+    }
+
   ]
 }
+
