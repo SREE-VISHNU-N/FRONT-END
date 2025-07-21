@@ -5,7 +5,7 @@ function Posts() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/posts").
+    fetch("http://localhost:3000/posts").
       then((data) => data.json()).
       then((data) => setPosts(data)).
       catch((error) => console.log(error))
@@ -45,7 +45,7 @@ function Posts() {
           ))}
         </div>
       ) : (
-        <div>Loading Posts</div>
+        <div className=' d-flex justify-content-center'><img className='spinner' src="http://localhost:5000/assets/Spinner-2.gif" alt="Loading" /></div>
       )}
 
     </div>

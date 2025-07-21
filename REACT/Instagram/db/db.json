@@ -170,6 +170,42 @@
       "profilePic": "http://localhost:5000/assets/penelope_cruz.jpg"
     }
 
-  ]
+  ],
+"story":[
+   {
+      "id": "1",
+      "username": "johnnydepp",
+      "profilePic": "http://localhost:5000/assets/Jack.jpg",
+      "image": "http://localhost:5000/assets/JohnnyStory.jpg",
+      "timestamp": "2025-07-14T12:00:00Z"
+    },
+    {
+      "id": "2",
+      "username": "tomcruise",
+      "profilePic": "http://localhost:5000/assets/Tom.jpg",
+      "image": "http://localhost:5000/assets/TomStory.jpg",
+      "timestamp": "2025-07-13T18:45:00Z"
+    },
+    {
+      "id": "3",
+      "username": "therock",
+      "profilePic": "http://localhost:5000/assets/Rock.jpg",
+      "image": "http://localhost:5000/assets/RockStory.jpg",
+      "timestamp": "2025-07-13T06:15:00Z"
+    },
+    {
+      "id": "4",
+      "username": "robertdowneyjr",
+      "profilePic": "http://localhost:5000/assets/Robert.jpg",
+      "image": "http://localhost:5000/assets/RobertStory.jpg",
+      "timestamp": "2025-07-12T20:30:00Z"
+    },
+    {
+      "id": "5",
+      "username": "keanureeves",
+      "profilePic": "http://localhost:5000/assets/Jhon.jpg",
+      "image": "http://localhost:5000/assets/keanuStory.jpg",
+      "timestamp": "2025-07-11T16:00:00Z"
+    }
+]
 }
-

@@ -3,24 +3,24 @@ import React, { useEffect, useState } from 'react'
 function Stories() {
 
 
-  const [posts, setPosts] = useState([]);
+  const [story, setStory] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/posts").
+    fetch("http://localhost:3000/story").
       then((data) => data.json()).
-      then((data) => setPosts(data)).
+      then((data) => setStory(data)).
       catch((error) => console.log(error))
   }, [])
 
 
   return (
     <div className="storyWrapper">
-      {posts.length > 0 ? (
-        posts.map((post) => (
-          <div className="storyContainer" key={post.id}>
+      {story.length > 0 ? (
+        story.map((story) => (
+          <div className="storyContainer" key={story.id}>
             <div className="storyDpBack">
-              <img className="storyDp rounded-circle" src={post.profilePic} alt="ProfilePic" />
-              <h5 className="storyUser">{post.username}</h5>
+              <img className="storyDp rounded-circle" src={story.profilePic} alt="ProfilePic" />
+              <h5 className="storyUser">{story.username}</h5>
             </div>
           </div>
         ))

@@ -17,5 +17,5 @@ function Sidebar() {
     </div>
   )
 }
-//npx json-server --watch db/db.json --port 5000 --static ./db
+//npx json-server --watch db/db.json --port 3000 --static ./db
 export default Sidebar
