@@ -140,7 +140,11 @@
   "profile":{
     "id": "6",
       "username": "john_cena",
-      "profilePic": "http://localhost:5000/assets/john_cena.jpg"
+      "profilePic": "http://localhost:5000/assets/john_cena.jpg",
+      "post":0,
+      "followers":"100M",
+      "following":"80M"
+      
   },
   
   "suggestions":[

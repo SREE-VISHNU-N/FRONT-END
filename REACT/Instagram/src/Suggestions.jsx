@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function Suggestions() {
   const [profile, setProfile] = useState(null);
   const [Suggestions, setSuggestions] = useState([]);
+  const navigate=useNavigate();
 
   useEffect(() => {
     fetch("http://localhost:5000/profile").
@@ -24,7 +26,7 @@ function Suggestions() {
     <div>
   {profile ? (
     <div className='d-flex justify-content-between mt-4 ms-2 mb-3'>
-      <div className='d-flex'>
+      <div className='d-flex' onClick={()=> navigate('/Profile')}>
         <img className='suggesDp rounded-circle ms-5' src={profile.profilePic} alt="ProfilePic" />
         <h5 className='user'>{profile.username}  <i className="bi bi-patch-check-fill text-primary ms-1"></i></h5>
       </div>

@@ -216,4 +216,25 @@ font-size: 30px;
 .profile{
   height: 140px;
   width: 140px;
+  margin-right: 45px;
+  margin-top: 25px;
 }
+.profileContent{
+  margin-top: 30px;
+  position: relative;
+left: 40px;
+}
+.profileContent2{
+  position: relative;
+left: 120px;
+bottom: 150px;
+}
+.grayBox{
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
