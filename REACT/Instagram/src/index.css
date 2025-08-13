@@ -238,3 +238,25 @@ bottom: 150px;
   padding-left: 12px;
 }
 
+.Flink{
+  text-decoration: none;
+  color: darkblue;
+  font-size: 13px;
+  font-weight: 500;
+}
+.new{
+  font-size: 60px;
+  color: gainsboro;
+  position: absolute;
+  left: 350px;
+  top: 300px;
+}
+.newLetter{
+  color: black;
+  font-size: 12px;
+  margin-left: 17px;
+  font-weight: 500;
+  position: absolute;
+  top: 80px;
+}
+
