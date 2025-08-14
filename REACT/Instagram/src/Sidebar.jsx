@@ -9,7 +9,7 @@ function Sidebar() {
     <div className='container d-flex flex-column justify-content-between fs-5 mx-2 mb-0'>
       <img className='logo_text' src="db\assets\Insta_text.png" />
 
-      <div className='fw-bold'><i className="bi bi-house-door-fill fs-5" style={{ color: '#000000' }}></i>
+      <div className='fw-bold' onClick={() => navigate('/')}><i className="bi bi-house-door-fill fs-5" style={{ color: '#000000' }}></i>
         <span style={{ fontSize: '15px', color: '#000000' }}>Home</span></div>
 
       <div><i className="bi bi-search fs-5" style={{ color: '#000000' }}></i>

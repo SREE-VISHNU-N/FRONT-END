@@ -207,29 +207,36 @@
 .bi {
   cursor: pointer;
 }
-.spinner{
+
+.spinner {
   margin-top: 18%;
 }
-.arrow{
-font-size: 30px;
+
+.arrow {
+  font-size: 30px;
 }
-.profile{
+
+.profile {
   height: 140px;
   width: 140px;
   margin-right: 45px;
   margin-top: 25px;
 }
-.profileContent{
+
+.profileContent {
   margin-top: 30px;
   position: relative;
-left: 40px;
+  left: 40px;
 }
-.profileContent2{
+
+.profileContent2 {
+
   position: relative;
-left: 120px;
-bottom: 150px;
+  left: 120px;
+  bottom: 150px;
 }
-.grayBox{
+
+.grayBox {
   background-color: #f2f2f2;
   border-radius: 6px;
   padding-top: 4px;
@@ -238,20 +245,22 @@ bottom: 150px;
   padding-left: 12px;
 }
 
-.Flink{
+.Flink {
   text-decoration: none;
   color: darkblue;
   font-size: 13px;
   font-weight: 500;
 }
-.new{
+
+.new {
   font-size: 60px;
   color: gainsboro;
   position: absolute;
-  left: 350px;
+  left: 230px;
   top: 300px;
 }
-.newLetter{
+
+.newLetter {
   color: black;
   font-size: 12px;
   margin-left: 17px;
@@ -259,4 +268,8 @@ bottom: 150px;
   position: absolute;
   top: 80px;
 }
-
+.hello{
+  width: 80%;
+  position: relative;
+  left: 125px;
+}
