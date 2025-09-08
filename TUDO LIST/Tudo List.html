@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tudo List</title>
+    <title>Todo List</title>
     <link rel="stylesheet" href="Tudo List Style.css">
 </head>
 
@@ -15,47 +15,80 @@
 
             <div class="topbox">
 
-                <h1 style="text-align: center;">Tudo List</h1>
+                <h1 style="text-align: center;">Todo List</h1>
 
-                <input placeholder="Ex: Sree vishnu " class="input" id="input" type="text"><button id="addli"
-                    onclick="add()">ADD</button>
+                <input placeholder="Ex: I should study " class="input" id="input" type="text">
+                <button id="addli" onclick="add()">ADD</button>
 
             </div>
 
             <div class="scrollbox">
-
-                <ol id="list">
-
-                </ol>
-
+                <ol id="list"></ol>
             </div>
 
         </div>
 
         <script>
-
             let id = 'data';
             let increment = 0;
-            let input = document.getElementById("input")
-            let addli = document.getElementById("list")
+            let input = document.getElementById("input");
+            let addli = document.getElementById("list");
+
+            window.onload = function () {
+                let stored = localStorage.getItem("tasks");
+                if (stored) {
+                    addli.innerHTML = stored;
+                }
+            };
 
             function add() {
-                let list = document.createElement("li");
+                let value = input.value.trim();
+                if (value === "") {
+                    alert("Please enter a note before adding!");
+                    return;
+                }
+
                 increment++;
-                list.innerHTML = `<span id=${id + increment}>${input.value}</span>` + `<button class="del" onclick="del(event)">×</button>  <button class="copy" onclick="copy('${id + increment}')">Copy</button>`
-                addli.append(list)
+                let list = document.createElement("li");
+                list.innerHTML = `
+                    <div class="icons">
+                        <span id=${id + increment}>${value}</span>
+                        <div>
+                            <button class="mark" onclick="markDone(event)">✔</button>
+                            <button class="del" onclick="del(event)">🗑️</button>
+                        </div>
+                    </div>
+                `;
+                addli.append(list);
+                input.value = "";
+                saveData();
             }
 
             function del(event) {
-                event.target.parentElement.remove()
+                event.target.closest("li").remove();
+                saveData();
             }
 
-            function copy(id) {
-                let copytext = document.getElementById(id).innerHTML;
-                // console.log(document.getElementById(id).innerHTML)
-                navigator.clipboard.writeText(copytext)
-                alert("Text copied: " + copytext)
+            function markDone(event) {
+                let task = event.target.parentElement.parentElement.querySelector("span");
+                task.classList.toggle("done");
+                if (task.classList.contains("done")) {
+                    event.target.innerHTML = "↩";
+                } else {
+                    event.target.innerHTML = "✔";
+                }
+                saveData();
             }
+
+            function saveData() {
+                localStorage.setItem("tasks", addli.innerHTML);
+            }
+
+            input.addEventListener("keypress", function (e) {
+                if (e.key === "Enter") {
+                    add();
+                }
+            });
         </script>
 
     </div>

@@ -1,4 +1,3 @@
-
 .container {
 
     display: flex;
@@ -21,7 +20,7 @@
 }
 
 body {
- 
+
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(data:image/jpeg;base64,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);
@@ -51,39 +50,9 @@ li {
 
 }
 
-.del {
-    text-align: center;
-
-    margin-left: 10px;
-    border-radius: 20px;
-    border: solid white 0px;
-    background-color: rgb(194, 213, 241);
-    height: 19px;
-    font-size: medium;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 1px;
-
-
-}
-
 li {
 
     font-size: large;
-
-}
-
-.copy {
-    padding-bottom: 1px;
-    margin-left: 5px;
-    height: 20px;
-    border-radius: 20px;
-    border: solid white 0px;
-    margin-bottom: 4px;
-    margin-top: 4px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    background-color: rgb(194, 213, 241);
 
 }
 
@@ -133,8 +102,6 @@ li {
     overflow-y: none;
     margin-top: 5px;
 
-
-
 }
 
 .topbox {
@@ -148,7 +115,31 @@ li {
     display: none;
 }
 
+
 h1 {
     color: rgb(194, 213, 241);
     margin-bottom: 15px;
+}
+
+.mark, .copy, .del {
+    border: solid white 0px;
+    background-color: rgb(194, 213, 241);
+    height: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+
+
+}
+
+.icons {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    
+
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
 }
