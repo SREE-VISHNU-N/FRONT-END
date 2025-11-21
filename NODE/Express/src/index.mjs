@@ -84,6 +84,33 @@ app.get('/api/products/:id',(req,res)=>{
     return res.send({msg: "Product is not found"});
 })
 
+app.use(express.json()); // middleware for convert json data from user
+
+app.post('/api/users',(req,res)=>{  // post request method for store data from frontend
+    console.log(req.body);
+    const {body} = req;
+    const newUser = {id: users[users.length-1].id+1, ...body};
+    users.push(newUser);
+    res.status(201).send(newUser);
+})
+
+
+app.put('/api/users/:id',(req,res)=>{
+    const id = parseInt(req.params.id);
+    if(isNaN(id)){
+        res.status(404).send({msg:'Bad request, Invalid ID'});
+    }
+
+    const userIndex = users.findIndex((user)=>user.id === id);
+
+    if(userIndex === -1){
+        res.status(404).send({msg:'User is not found'});
+    }
+     const {body}=req;
+    users[userIndex]={id: id, ...body};
+    res.status(200).send({msg:'Data updated'})
+
+})
 
 
 // query -> http://localhost:3000/users?filter=userName&value=sr
